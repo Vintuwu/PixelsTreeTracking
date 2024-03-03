@@ -16,34 +16,29 @@
     <div class="container-fluid bg-grupo1">
         <header class="container d-flex flex-wrap justify-content-center py-1">
           <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <i class="fa-solid fa-user-group mx-2"></i>
-            <span class="fs-4">Pixels Tracking</span>
+            <span class="fs-4">Pixels Tree Tracking</span>
           </div>
           <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-light link-body-emphasis ">Home</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Random Track</a></li>
-            <li class="nav-item"><a href="noPrivIslands.html" class="nav-link text-light link-body-emphasis ">Not Private Islands</a></li>
-            <li class="nav-item"><a href="searchIsland.html" class="nav-link text-light link-body-emphasis ">Search for Islands</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link text-light link-body-emphasis ">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Random track</a></li>
+            <li class="nav-item"><a href="noPrivIslands.html" class="nav-link text-light link-body-emphasis ">Public lands</a></li>
+            <li class="nav-item"><a href="searchIsland.html" class="nav-link text-light link-body-emphasis ">Search lands</a></li>
           </ul>
         </header>
     </div>
     <div class="container-fluid">
-        <div class="container d-flex flex-wrap justify-content-center py-1">
-            <input type="number" placeholder="1234" class="form-control w-25 mr-3" maxlength="4" max="5000" min="1" name="seed" id="seed">
-            <button id="search" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button id="random" class="btn btn-primary"><i class="fa-solid fa-shuffle"></i></button>
+        <div class="container d-flex flex-wrap justify-content-center mt-3">
+            <button id="random" class="btn btn-copy"><i class="fa-solid fa-shuffle"></i></button>
         </div>
     </div>
     <main>
-        <div class="container text-center pt-5">
+        <div class="container text-center mt-3">
             <div class="row mb-3">
                 <div class="col position-relative">
                     <div class="position-absolute end-0 mt-3 me-5">
                         <button id="copySeed1" class="btn btn-copy"><i class="fas fa-copy"></i></button>
                     </div>
-                    <iframe src="" id="iframe1" width="600" height="400" frameborder="0"></iframe>
+                    <iframe class="rounded" src="" id="iframe1" width="600" height="400" frameborder="0"></iframe>
                 </div>
                 <div class="col position-relative">
                     <div class="position-absolute end-0 mt-3 me-5">

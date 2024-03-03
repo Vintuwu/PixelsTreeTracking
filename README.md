@@ -1,2 +1,2 @@
-# TrakingLandsPixels
-Same traking lands feature from pixelstools but free
+# Pixels Tree Tracking
+A land tracker with trees for better farming.

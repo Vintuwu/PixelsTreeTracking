@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Tracking</title>
+    <title>No private islands</title>
     <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/Bootstrap/bootstrap.js"></script>
     <script src="JS/JQuery/JQuery.js"></script>
     <script src="https://kit.fontawesome.com/3f0f040aa7.js" crossorigin="anonymous"></script>
     <script src="JS/scripts.js"></script>
-    <script src="JS/search.js"></script>
+    <script src="JS/publicIslands.js"></script>
 </head>
 <body data-bs-theme="dark">
     <div class="container-fluid bg-grupo1">
@@ -23,16 +23,14 @@
             <li class="nav-item">
               <a href="index.html" class="nav-link text-light link-body-emphasis ">Home</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Random Track</a></li>
-            <li class="nav-item"><a href="noPrivIslands.html" class="nav-link text-light link-body-emphasis ">Not Private Islands</a></li>
+            <li class="nav-item"><a href="randomTrack.html" class="nav-link text-light link-body-emphasis ">Random Track</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Not Private Islands</a></li>
             <li class="nav-item"><a href="searchIsland.html" class="nav-link text-light link-body-emphasis ">Search for Islands</a></li>
           </ul>
         </header>
     </div>
     <div class="container-fluid">
         <div class="container d-flex flex-wrap justify-content-center py-1">
-            <input type="number" placeholder="1234" class="form-control w-25 mr-3" maxlength="4" max="5000" min="1" name="seed" id="seed">
-            <button id="search" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button id="random" class="btn btn-primary"><i class="fa-solid fa-shuffle"></i></button>
         </div>
     </div>

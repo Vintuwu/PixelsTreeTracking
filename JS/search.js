@@ -18,6 +18,7 @@ function updateLands(){
         navigator.clipboard.writeText(collection[3])
     });
 }
+
 $(document).ready(function(){
     updateLands()
     

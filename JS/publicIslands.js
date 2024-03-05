@@ -4,5 +4,6 @@ $(document).ready(function(){
 
     $('#random').on('click',function(){
         updateLands(publicRandom());
+        return false;
     })
 })

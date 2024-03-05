@@ -6,12 +6,21 @@
     background-color: #622AFF;
 }
 
-.btn-pressed {
+.nav-item.btn-pressed {
     background-color: #420D7F;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #221f27 inset;
+    /* Remove link styles as they might interfere */
+    color: inherit !important; /* Inherit text color from parent */
+    text-decoration: none !important; /* Remove underline */
+  }
+
+.btn:hover,
+.nav-link:hover {
+    background-color: #7563F6;
+    color: #000000;
 }
 
-.w-17 {
-    width: 17%!important;
-}
+.btn:active:not(.btn-pressed) {
+    background-color: #420D7F; /* Mantén el color original del botón presionado */
+  }

@@ -1,11 +1,11 @@
 function updateLands(){
     var collection = randomizer();
     var aux = 0
-    
+
     for (var i=0; i<4; i++){
         aux = i+1;
         $('#iframe' + aux).attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[i])
-        $('#copyseed' + aux).on('click', function(){
+        $('#copySeed' + aux).on('click', function(){
             navigator.clipboard.writeText(collection[i])
         })
         $('#seed' + aux).val(collection[i]);

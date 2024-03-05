@@ -10,23 +10,15 @@ function publicRandom(array){
 
 function updateLands(someArray){
     var seeds = publicRandom(someArray);
-
-    $('#iframe1').attr('src', 'https://play.pixels.xyz/pixels/share/' + seeds[0]);
-    $('#copySeed1').on('click', function() {
-        navigator.clipboard.writeText(seeds[0])
-    });
-    $('#iframe2').attr('src', 'https://play.pixels.xyz/pixels/share/' + seeds[1]);
-    $('#copySeed2').on('click', function() {
-        navigator.clipboard.writeText(seeds[1])
-    });
-    $('#iframe3').attr('src', 'https://play.pixels.xyz/pixels/share/' + seeds[2]);
-    $('#copySeed3').on('click', function() {
-        navigator.clipboard.writeText(seeds[2])
-    });
-    $('#iframe4').attr('src', 'https://play.pixels.xyz/pixels/share/' + seeds[3]);
-    $('#copySeed4').on('click', function() {
-        navigator.clipboard.writeText(seeds[3])
-    });
+    var aux = 0
+    for (var i=0; i<4; i++){
+        aux = i+1;
+        $('#iframe' + aux).attr('src', 'https://play.pixels.xyz/pixels/share/' + seeds[i])
+        $('#copyseed' + aux).on('click', function(){
+            navigator.clipboard.writeText(seeds[i])
+        })
+        $('#seed' + aux).val(seeds[i]);
+    }
 }
 
 $(document).ready(function(){

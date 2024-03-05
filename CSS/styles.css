@@ -11,3 +11,7 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px #221f27 inset;
 }
+
+.w-17 {
+    width: 17%!important;
+}

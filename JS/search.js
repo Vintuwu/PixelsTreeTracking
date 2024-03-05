@@ -1,22 +1,15 @@
 function updateLands(){
     var collection = randomizer();
-
-    $('#iframe1').attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[0]);
-    $('#copySeed1').on('click', function() {
-        navigator.clipboard.writeText(collection[0])
-    });
-    $('#iframe2').attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[1]);
-    $('#copySeed2').on('click', function() {
-        navigator.clipboard.writeText(collection[1])
-    });
-    $('#iframe3').attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[2]);
-    $('#copySeed3').on('click', function() {
-        navigator.clipboard.writeText(collection[2])
-    });
-    $('#iframe4').attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[3]);
-    $('#copySeed4').on('click', function() {
-        navigator.clipboard.writeText(collection[3])
-    });
+    var aux = 0
+    
+    for (var i=0; i<4; i++){
+        aux = i+1;
+        $('#iframe' + aux).attr('src', 'https://play.pixels.xyz/pixels/share/' + collection[i])
+        $('#copyseed' + aux).on('click', function(){
+            navigator.clipboard.writeText(collection[i])
+        })
+        $('#seed' + aux).val(collection[i]);
+    }
 }
 
 $(document).ready(function(){

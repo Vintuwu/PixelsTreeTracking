@@ -5,3 +5,9 @@
 .btn-copy {
     background-color: #622AFF;
 }
+
+.btn-pressed {
+    background-color: #420D7F;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #221f27 inset;
+}

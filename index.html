@@ -1,63 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tracking Lands</title>
-    <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="https://kit.fontawesome.com/3f0f040aa7.js" crossorigin="anonymous"></script>
-    <script src="JS/Bootstrap/bootstrap.js"></script>
-    <script src="JS/JQuery/JQuery.js"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="Image/icons8-pixel-16.png">
 </head>
 <body data-bs-theme="dark">
-    <div class="container-fluid bg-grupo1 rounded-bottom-4">
-        <header class="container d-flex flex-wrap justify-content-center py-1">
-          <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <span class="fs-4">Pixels Tree Tracking</span>
-          </div>
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="randomTrack.html" class="nav-link text-light link-body-emphasis ">Random track</a></li>
-            <li class="nav-item"><a href="noPrivIslands.html" class="nav-link text-light link-body-emphasis ">Public lands</a></li>
-            <li class="nav-item"><a href="searchIsland.html" class="nav-link text-light link-body-emphasis ">Search lands</a></li>
-          </ul>
-        </header>
+  <div class="container-fluid bg-grupo1 rounded-bottom-4">
+    <header class="container d-flex flex-wrap justify-content-center py-1">
+      <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+        <span class="fs-4">Pixels Tree Tracking</span>
       </div>
-      <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Tracking options</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <i class="fa-solid fa-shuffle"></i>
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Random Track</h3>
-              <p>A random track where you will find all the lands that have trees accessible by walking.</p>
-              <a href="randomTrack.html" class="btn btn-primary">Go</a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Public Islands</h3>
-              <p>A monitoring of lands that contain trees and are known to be public. You can cut the trees for free.</p>
-              <a href="noPrivIslands.html" class="btn btn-primary">Go</a>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div>
-              <h3 class="fs-2 text-body-emphasis">Search Lands</h3>
-              <p>An option to search for your favorite land, who is there and what is there.</p>
-              <a href="searchIsland.html" class="btn btn-primary">Go</a>
-            </div>
-          </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item btn-pressed"><a href="#" class="nav-link text-light link-body-emphasis " aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="randomTrack.html" class="nav-link text-light link-body-emphasis ">Random track</a></li>
+        <li class="nav-item"><a href="publicLands.html" class="nav-link text-light link-body-emphasis ">Public lands</a></li>
+        <li class="nav-item"><a href="searchIsland.html" class="nav-link text-light link-body-emphasis ">Search lands</a></li>
+      </ul>
+    </header>
+  </div>
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Tracking options</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Random Track</h3>
+          <p>A random track where you will find all the lands that have trees accessible by walking.</p>
+          <a href="randomTrack.html" class="btn btn-copy">Go</a>
         </div>
       </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Public Islands</h3>
+          <p>A monitoring of lands that contain trees and are known to be public. You can cut the trees for free.</p>
+          <a href="publicLands.html" class="btn btn-copy">Go</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Search Lands</h3>
+          <p>An option to search for your favorite land, who is there and what is there.</p>
+          <a href="searchIsland.html" class="btn btn-copy">Go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="JS/JQuery/jquery-3.7.1.min.js"></script>
+  <script src="JS/Popper/popper.min.js"></script>
+  <script src="JS/Bootstrap/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/3f0f040aa7.js" crossorigin="anonymous"></script>
 </body>
 </html>

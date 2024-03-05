@@ -21,7 +21,6 @@ function updateLands(){
 
 $(document).ready(function(){
     updateLands()
-    
     $('#search').on('click', function(){
         var newSeed = $('#seed').val();
 

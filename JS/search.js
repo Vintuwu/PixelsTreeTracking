@@ -1,7 +1,19 @@
 $(document).ready(function(){
-    updateLands(randomize())
+    var lands = randomize();
+    var formerLands;
+    updateLands(lands);
+    
     $('#random').on('click', function(){
-        updateLands(randomize())
+        formerLands = lands;
+        lands = randomize();
+        updateLands(lands);
         return false;
     });
+
+    $('#undo').on('click', function(){
+        if (formerLands.length > 0 ){
+            updateLands(formerLands);
+        }
+        return false;
+    })
 });
